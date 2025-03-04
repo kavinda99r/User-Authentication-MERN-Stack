@@ -64,11 +64,11 @@ const LoginPage = () => {
               value={form.password}
               onChange={handleChange}
             />
-            <button type="submit" className="px-4 py-2 rounded-[3px] bg-blue-500 text-white font-medium text-sm lg:text-base mt-1 cursor-pointer hover:bg-blue-600 transition-all duration-200 ease-in-out">Login</button>
+            <button type="submit" className="px-4 py-2 rounded-[3px] bg-[#0078D4] text-white font-medium text-sm lg:text-base mt-1 cursor-pointer hover:bg-[#025594] transition-all duration-200 ease-in-out">Login</button>
 
             <p className="text-center text-[#222222]">
               Create an account.
-              <Link to="/signup" className="ml-1 text-blue-500">
+              <Link to="/signup" className="ml-1 text-[#0078D4]">
                 Sign Up
               </Link>
             </p>

@@ -40,9 +40,25 @@ router.post("/login", async (req, res) => {
     }
 });
 
+// Profile Route
+router.get("/profile", authMiddleware, async (req, res) => {
+    try {
+        const user = await User.findById(req.userId); 
 
-router.get("/profile", authMiddleware, (req, res) => {
-    res.json({ message: "Welcome to the Profile!" });
+        if (!user) {
+            return res.status(404).json({ message: "User not found" });
+        }
+
+        res.json({
+            name: user.name,
+            email: user.email,
+            phone: user.phone,
+            address: user.address,
+            city: user.city
+        });
+    } catch (error) {
+        res.status(500).json({ message: error.message });
+    }
 });
 
 export default router;

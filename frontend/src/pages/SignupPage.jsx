@@ -107,14 +107,14 @@ const SignupPage = () => {
 
             <button
               type="submit"
-              className="px-4 py-2 mx-auto rounded-[3px] w-[300px] bg-blue-500 text-white font-medium text-sm lg:text-base mt-1 cursor-pointer hover:bg-blue-600 transition-all duration-200 ease-in-out"
+              className="px-4 py-2 rounded-[3px] w-[300px] mx-auto bg-[#0078D4] text-white font-medium text-sm lg:text-base mt-1 cursor-pointer hover:bg-[#025594] transition-all duration-200 ease-in-out"
             >
               Sign Up
             </button>
 
             <p className="text-center text-[#222222]">
               Already have an account?
-              <Link to="/" className="ml-1 text-blue-500">
+              <Link to="/" className="ml-1 text-[#0078D4]">
                 Login
               </Link>
             </p>
