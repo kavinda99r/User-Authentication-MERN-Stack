@@ -1,7 +1,8 @@
 import express from "express";
 import bcrypt from "bcryptjs";
 import jwt from "jsonwebtoken";
-import User from "../models/User";
+import User from "../models/User.js";
+import authMiddleware from "../middlewares/authMiddleware.js";
 
 const router = express.Router();
 
@@ -39,5 +40,9 @@ router.post("/login", async (req, res) => {
     }
 });
 
+
+router.get("/profile", authMiddleware, (req, res) => {
+    res.json({ message: "Welcome to the Profile!" });
+});
 
 export default router;
