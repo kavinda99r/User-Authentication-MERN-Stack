@@ -68,4 +68,8 @@ cd frontend
 npm run dev
 ```
 
-<hr>
+<h2> </h2>
+
+<h3>Happy Coding! 🎉</h3>
+
+---
